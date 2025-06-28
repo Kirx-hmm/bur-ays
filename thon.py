@@ -261,11 +261,7 @@ async def on_message(msg):
             pass
     await bot.process_commands(msg)
 
-from dotenv import load_dotenv
 import os
-
-load_dotenv()  # Load environment variables from .env file
-
-TOKEN = os.getenv('DISCORD_TOKEN')
+TOKEN = os.getenv("DISCORD_TOKEN")
 bot.run(TOKEN)
 
